@@ -6,7 +6,7 @@ import {
   eliminarUsuario,
   actualizarUsuario,
   getUsuarioById,
-} from '../../services/Usuarios';
+} from '../../services/usuarios';
 
 export default function UsuariosDashboard() {
   const [usuarios, setUsuarios] = useState([]);
