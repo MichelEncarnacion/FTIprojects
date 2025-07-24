@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../api/axios";
@@ -12,10 +11,10 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col overflow-x-hidden w-screen">
       {/* Hero Section */}
       <section
-        className="relative h-screen bg-cover bg-center"
+        className="relative w-screen h-screen bg-cover bg-center"
         style={{ backgroundImage: "url('/assets/home-hero.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/50" />
@@ -30,7 +29,7 @@ export default function Home() {
       </section>
 
       {/* Nosotros Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 w-full">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center px-6 gap-12">
           <div className="md:w-1/2 bg-white p-8 rounded-lg shadow">
             <h2 className="text-3xl font-bold mb-4">Nosotros</h2>
@@ -51,7 +50,7 @@ export default function Home() {
       </section>
 
       {/* Galería Section */}
-      <section className="py-16">
+      <section className="py-16 w-full">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">Galería</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -78,11 +77,8 @@ export default function Home() {
         </div>
       </section>
 
-
-
-
-      {/* Footer (mantener como está) */}
-      <footer className="bg-slate-800 text-white py-6">
+      {/* Footer */}
+      <footer className="bg-slate-800 text-white py-6 w-full">
         <div className="max-w-6xl mx-auto px-6 text-center text-sm">
           © {new Date().getFullYear()} Proyectos Académicos. Todos los derechos reservados.
         </div>
