@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../api/axios";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   const [proyectos, setProyectos] = useState([]);
@@ -77,9 +78,42 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-slate-800 text-white py-6 w-full">
-        <div className="max-w-6xl mx-auto px-6 text-center text-sm">
+      {/* Footer  */}
+      <footer className="bg-slate-900 text-gray-300 pt-12 pb-6 w-full border-t border-slate-700">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+          {/* Branding */}
+          <div className="text-center md:text-left">
+            <h2 className="text-2xl font-bold text-white mb-2">Proyectos Académicos</h2>
+            <p className="text-sm">
+              Inspirando conocimiento, creando soluciones.
+            </p>
+          </div>
+
+          {/* Enlaces */}
+          <div className="text-center">
+            <h3 className="text-white font-semibold text-lg mb-3">Enlaces</h3>
+            <ul className="space-y-2 text-sm">
+              <li><a href="/about" className="hover:text-white transition">Sobre Nosotros</a></li>
+              <li><a href="/projects" className="hover:text-white transition">Proyectos</a></li>
+              <li><a href="/contact" className="hover:text-white transition">Contacto</a></li>
+              <li><a href="/terms" className="hover:text-white transition">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+
+          {/* Redes Sociales */}
+          <div className="text-center md:text-right">
+            <h3 className="text-white font-semibold text-lg mb-3">Síguenos</h3>
+            <div className="flex justify-center md:justify-end gap-4 text-xl">
+              <a href="#" className="hover:text-white transition"><FaFacebookF /></a>
+              <a href="#" className="hover:text-white transition"><FaTwitter /></a>
+              <a href="#" className="hover:text-white transition"><FaInstagram /></a>
+              <a href="#" className="hover:text-white transition"><FaLinkedin /></a>
+            </div>
+          </div>
+        </div>
+
+        {/* Línea final */}
+        <div className="mt-10 text-center text-xs text-gray-500">
           © {new Date().getFullYear()} Proyectos Académicos. Todos los derechos reservados.
         </div>
       </footer>
