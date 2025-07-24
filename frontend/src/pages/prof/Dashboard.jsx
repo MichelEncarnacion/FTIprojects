@@ -35,7 +35,7 @@ export default function Dashboard() {
   if (!prof) return <div className="p-6">Cargando…</div>;
 
   return (
-    <div className="p-6 w-full space-y-10">
+    <div className="w-screen min-h-screen p-6 space-y-10 bg-gray-50">
       {/* PERFIL */}
       <section className="bg-white p-6 rounded-lg shadow flex justify-between items-center">
         <div className="flex items-center space-x-6">

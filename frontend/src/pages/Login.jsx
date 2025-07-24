@@ -29,8 +29,8 @@ export default function Login() {
 
   return (
     <div
-      className="min-h-screen bg-cover bg-center flex items-center justify-center px-4"
- style={{ backgroundImage: `url(${bgImage})` }}
+      className="w-screen h-screen bg-cover bg-center flex items-center justify-center px-4"
+      style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="backdrop-blur-md bg-white/20 dark:bg-gray-900/40 border-2 border-red-500 p-8 rounded-2xl shadow-2xl max-w-md w-full">
         <h2 className="text-3xl font-extrabold text-black mb-6 text-center">

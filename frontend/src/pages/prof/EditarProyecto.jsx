@@ -67,7 +67,7 @@ export default function EditarProyecto() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div  className="w-screen min-h-screen bg-gray-100 flex items-center justify-center p-4">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="w-full max-w-2xl bg-white p-6 rounded-lg shadow"
