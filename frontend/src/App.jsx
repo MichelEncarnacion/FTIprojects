@@ -14,6 +14,11 @@ import SapsStem from './pages/SapsStem';
 import SapsDesarrolloHumano from './pages/SapsDesarrolloHumano';
 import ProyectoDetail from "./pages/ProyectoDetail.jsx";
 
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
 function AppWrapper() {
   const location = useLocation();
   const hideNavbar = location.pathname.startsWith('/admin');
