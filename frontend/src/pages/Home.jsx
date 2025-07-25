@@ -29,23 +29,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Nosotros Section */}
-      <section className="py-16 bg-gray-50 w-full">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center px-6 gap-12">
-          <div className="md:w-1/2 bg-white p-8 rounded-lg shadow">
-            <h2 className="text-3xl font-bold mb-4">Nosotros</h2>
-            <p className="text-gray-700 mb-4">
-              La Facultad TI es el punto de encuentro entre la ciencia, <span className="font-semibold">creatividad digital</span> y el <span className="font-semibold">compromiso social</span>.
+      {/* Nosotros Section (una imagen) */}
+      <section className="py-20 bg-white w-full border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Texto */}
+          <div className="space-y-6">
+            <h2 className="text-4xl font-extrabold text-slate-800">¿Quiénes somos?</h2>
+            <p className="text-gray-700 text-lg leading-relaxed">
+              En la <span className="font-semibold text-slate-900">Facultad de Tecnologías de la Información y Ciencia de Datos</span>, formamos una comunidad dinámica donde convergen la innovación tecnológica, la creatividad digital y el compromiso social.
             </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-700">
-              <li>Diseñan soluciones tecnológicas con impacto real, alineadas a los ejes SAPS</li>
-              <li>Fomentan la innovación en proyectos estudiantiles</li>
-              <li>Impulsan la colaboración entre estudiantes y profesores</li>
+            <p className="text-gray-700 text-lg leading-relaxed">
+              Nuestro enfoque está alineado con los ejes <span className="font-semibold">SAPS</span> (Solidaridad, Autonomía, Plenitud y Sabiduría), generando un espacio donde los estudiantes diseñan soluciones de alto impacto, fomentando el pensamiento crítico y la colaboración interdisciplinaria.
+            </p>
+            <ul className="list-disc list-inside space-y-2 text-gray-700 text-base">
+              <li>Proyectos tecnológicos con impacto real en la sociedad.</li>
+              <li>Creatividad y trabajo colaborativo entre alumnos y docentes.</li>
+              <li>Habilidades blandas y técnicas clave para el entorno profesional.</li>
             </ul>
           </div>
-          <div className="md:w-1/2 grid grid-cols-2 gap-4">
-            <img src="/assets/nosotros1.jpg" alt="Nosotros 1" className="rounded-lg shadow-lg object-cover h-48 w-full" />
-            <img src="/assets/nosotros2.jpg" alt="Nosotros 2" className="rounded-lg shadow-lg object-cover h-48 w-full" />
+
+          {/* Imagen única */}
+          <div>
+            <img
+              src="/assets/nosotros1.jpg"
+              alt="Equipo de trabajo"
+              className="rounded-xl shadow-xl object-cover w-full h-80"
+            />
           </div>
         </div>
       </section>
@@ -78,7 +87,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer  */}
+      {/* Footer Pro */}
       <footer className="bg-slate-900 text-gray-300 pt-12 pb-6 w-full border-t border-slate-700">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Branding */}
